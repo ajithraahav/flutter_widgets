@@ -26,14 +26,17 @@ class dUnSafeArea extends StatelessWidget {
                 color: Colors.red,
               ),),
             ),
-            RaisedButton.icon(                          //Icon inside button - remove const from center
+            ElevatedButton.icon(                          //Icon inside button - remove const from center
               onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) =>  home.Home())),
               icon: const Icon(
                 Icons.home
               ), 
               label: const Text('Home'),
-              color: Colors.lightGreen[300],
-              ),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightGreen[300], // background
+                  onPrimary: Colors.white, // foreground
+                ), 
+            ),
         ]
         ),
       ),

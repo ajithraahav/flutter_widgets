@@ -16,9 +16,12 @@ class dRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        RaisedButton(                             //Button with box shadow  - remove const from center
+        ElevatedButton(                             //Button with box shadow  - remove const from center
           onPressed: () {  },
-          color: Colors.lightBlue[100],
+          style: ElevatedButton.styleFrom(
+              primary: Colors.blue[100], // background
+              onPrimary: Colors.white, // foreground
+            ), 
           child: const Text('Click me 1',
             style: TextStyle(
             color: Colors.white
@@ -26,9 +29,12 @@ class dRow extends StatelessWidget {
           ),
         ),
       
-        RaisedButton(                             //Button with box shadow  - remove const from center
+        ElevatedButton(                             //Button with box shadow  - remove const from center
           onPressed: () {  },
-          color: Colors.lightBlue[400],
+          style: ElevatedButton.styleFrom(
+              primary: Colors.blue[400], // background
+              onPrimary: Colors.white, // foreground
+            ), 
           child: const Text('Click me 2',
             style: TextStyle(
             color: Colors.white
@@ -36,9 +42,12 @@ class dRow extends StatelessWidget {
           ),
         ),
       
-        RaisedButton(                             //Button with box shadow  - remove const from center
+        ElevatedButton(                             //Button with box shadow  - remove const from center
           onPressed: () {  },
-          color: Colors.lightBlue[800],
+          style: ElevatedButton.styleFrom(
+              primary: Colors.blue[800], // background
+              onPrimary: Colors.white, // foreground
+            ), 
           child: const Text('Click me 3',
             style: TextStyle(
             color: Colors.white

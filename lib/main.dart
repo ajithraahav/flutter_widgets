@@ -13,6 +13,7 @@ import 'expanded.dart' as d_expanded;
 import 'overflow.dart' as d_textoverflow;
 import 'safearea.dart' as d_safearea;
 import './scrollview.dart' as d_scrollview;
+
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
   home: Home()
@@ -26,6 +27,8 @@ void main() => runApp(MaterialApp(
 ));
 
 class Home extends StatelessWidget {
+  // get ElevatedButton => null;
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -45,110 +48,143 @@ class Home extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_text.dText())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Text Styles'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_images.dImages())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Images'),
-                    color: Colors.blue[100]),
+                    ),
                 ),Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_icon.dIcon())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Icon'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_button.dButton())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Button'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_container.dContainer())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Container&Padding'),
-                    color: Colors.blue[100]),
+                    ),
                 ),Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_row.dRow())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Row'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_column.dColumn())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Column'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_expanded.d_expanded())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Expanded'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_textoverflow.dTextOverFlow())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Text Overflow'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_safearea.dSafeArea())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('SafeArea'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   child: 
-                    RaisedButton.icon(        
+                    ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[100], // background
+                        onPrimary: Colors.white, // foreground
+                  ),        
                     onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) => const d_scrollview.dScrollView())),
                     icon: Icon(Icons.radar),
-                    padding: EdgeInsets.symmetric(horizontal:17, vertical: 12),
                     label: Text('Scroll View'),
-                    color: Colors.blue[100]),
+                    ),
                 ),
               ],
             ),

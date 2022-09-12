@@ -21,20 +21,23 @@ class dSafeArea extends StatelessWidget {
                 fit: BoxFit.fill),
             ),
             Container(
-              child: Text('With Safe Area',
+              child: const Text('With Safe Area',
               style: TextStyle(
                 fontSize: 40,
                 color: Colors.lightBlue,
               ),),
             ),
-            RaisedButton.icon(                          //Icon inside button - remove const from center
+            ElevatedButton.icon(                          //Icon inside button - remove const from center
               onPressed:() => Navigator.push(context, MaterialPageRoute(builder: (context) =>  home.Home())),
               icon: const Icon(
                 Icons.home
               ), 
               label: const Text('Home'),
-              color: Colors.lightGreen[300],
-              ),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightGreen[300], // background
+                  onPrimary: Colors.white, // foreground
+                ), 
+            ),
           ]
           ),
         ),

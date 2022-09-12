@@ -16,33 +16,35 @@ class dButton extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
-            RaisedButton(                             //Button with box shadow  - remove const from center
+            ElevatedButton(                             //Button with box shadow  - remove const from center
               onPressed: () {  },
-              color: Colors.blueGrey[300],
-              child: const Text('Raised Button',
-                style: TextStyle(
-                color: Colors.white
-                ),
-              ),
+              style: ElevatedButton.styleFrom(
+                    primary: Colors.blueGrey[300], // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+              child: const Text('Raised Button'),
             ),
-            FlatButton(                                 //Button without box shadow - remove const from center
+            TextButton(                                 //Button without box shadow - remove const from center
               onPressed: () { 
                 print(' click meeeee');
               },
-              color: Colors.lightBlue,
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
               child: const Text('Flat Button',
                 style: TextStyle(
                 color: Colors.white
                 ),
               ),
             ),
-            RaisedButton.icon(                          //Icon inside button - remove const from center
+            ElevatedButton.icon(                          //Icon inside button - remove const from center
               onPressed: () { },
+              style: ElevatedButton.styleFrom(
+                    primary: Colors.amber, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
               icon: const Icon(
                 Icons.mail
               ), 
               label: const Text('Mail me'),
-              color: Colors.amber,
               ),
         ]),
       ),
